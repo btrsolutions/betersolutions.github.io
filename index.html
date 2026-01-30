@@ -26,7 +26,7 @@
             padding: 0;
         }
 
-        h1, h2, h3, h4, h5, .navbar-brand {
+        h1, h2, h3, h4, h5 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
         }
@@ -45,10 +45,10 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: radial-gradient(#ed507e 1px, transparent 1px);
-            background-size: 30px 30px;
-            opacity: 0.1;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ed507e' fill-opacity='0.20' fill-rule='evenodd'%3E%3Cpath d='M20 22h2v-2h2v-2h-2v-2h-2v2h-2v2h2z'/%3E%3C/g%3E%3C/svg%3E");
             pointer-events: none;
+            -webkit-mask-image: radial-gradient(circle, transparent 10%, black 90%);
+            mask-image: radial-gradient(circle, transparent 10%, black 90%);
         }
 
         .text-primary {
@@ -58,6 +58,7 @@
         .card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-top: 4px solid transparent;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
         }
 
         .card:hover {
@@ -90,19 +91,15 @@
         }
 
         .masthead img {
-            max-width: 300px;
-        }
-
-        .features-icons i {
-            font-size: 3rem;
+            max-width: 360px;
         }
     </style>
 </head>
 <body>
     <header class="masthead text-white text-center py-5">
         <div class="container py-5" data-aos="fade-up">
-            <img src="img/beter_logo.png" alt="BTR Solutions Logo" class="img-fluid mb-4" data-aos="zoom-in" data-aos-delay="200">
-            <h1 class="display-3 mb-3">Managed Kubernetes.<br>Maar dan <span class="text-primary">BETER</span>.</h1>
+            <img src="img/beter_logo_tr.png" alt="BTR Solutions Logo" class="img-fluid mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <h1 class="display-4 mb-3">Managed Kubernetes.<br>Maar dan <span class="text-primary">BETER</span>.</h1>
             <p class="lead mb-4">De kracht van Kubernetes bij je eigen cloud provider,<br>volledig beheerd door onze experts.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="#services" class="btn btn-outline-light btn-lg px-4">Wat doen jullie precies?</a>
@@ -151,24 +148,30 @@
             <h2 class="text-center mb-5" data-aos="fade-up">Waarom <span class="text-primary fw-bold">BETER</span> ?</h2>
             <div class="row">
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-center p-4">
-                        <i class="bi bi-lock text-primary mb-3" style="font-size: 2rem;"></i>
-                        <h4 class="mb-3">Jij blijft eigenaar</h4>
-                        <p class="text-muted">Geen vendor lock-in. Het platform draait bij jouw eigen cloud provider. Wij beheren het, jij bezit het.</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-lock text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h4 class="card-title mb-3">Jij blijft eigenaar</h4>
+                            <p class="card-text text-muted">Geen vendor lock-in. Het platform draait bij jouw eigen cloud provider. Wij beheren het, jij bezit het.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-center p-4">
-                        <i class="bi bi-wallet2 text-primary mb-3" style="font-size: 2rem;"></i>
-                        <h4 class="mb-3">Vaste prijs</h4>
-                        <p class="text-muted">Geen uurtje-factuurtje of onverwachte meerkosten. Gewoon een vast bedrag per cluster per maand.<br><span class="text-primary fw-bold">BETER</span> voor je portemonee.</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-wallet2 text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h4 class="card-title mb-3">Vaste prijs</h4>
+                            <p class="card-text text-muted">Geen uurtje-factuurtje of onverwachte meerkosten. Gewoon een vast bedrag per cluster per maand.<br><span class="text-primary fw-bold">BETER</span> voor je portemonee.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-center p-4">
-                        <i class="bi bi-people text-primary mb-3" style="font-size: 2rem;"></i>
-                        <h4 class="mb-3">Partner, geen consultant</h4>
-                        <p class="text-muted">Wij bouwen het niet alleen, wij zorgen dat het blijft draaien. Jouw platformteam op afstand.</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-people text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h4 class="card-title mb-3">Partner, geen consultant</h4>
+                            <p class="card-text text-muted">Wij bouwen het niet alleen, wij zorgen dat het blijft draaien. Jouw platformteam op afstand.</p>
+                        </div>
                     </div>
                 </div>
             </div>
