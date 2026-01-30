@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Managed Kubernetes bij jouw eigen cloud provider. Wij regelen beheer, updates en security. Jouw platformteam op afstand.">
     <title>BETER | Managed Kubernetes.</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
@@ -47,7 +48,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ed507e' fill-opacity='0.20' fill-rule='evenodd'%3E%3Cpath d='M20 22h2v-2h2v-2h-2v-2h-2v2h-2v2h2z'/%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ed507e' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M20 22h2v-2h2v-2h-2v-2h-2v2h-2v2h2z'/%3E%3C/g%3E%3C/svg%3E");
             pointer-events: none;
             -webkit-mask-image: radial-gradient(circle, transparent 10%, black 90%);
             mask-image: radial-gradient(circle, transparent 10%, black 90%);
@@ -153,16 +154,6 @@
                 display: none;
             }
         }
-
-        .intro-read-more {
-            color: #ed507e;
-            transition: color 0.3s ease;
-        }
-
-        .intro-read-more:hover {
-            color: #c93060;
-            text-decoration: underline !important;
-        }
     </style>
 </head>
 <body>
@@ -197,8 +188,8 @@
         </div>
     </nav>
 
-    <header class="masthead text-white text-center py-5">
-        <div class="container py-5" data-aos="fade-up">
+    <header class="masthead text-white text-center pb-4">
+        <div class="container pt-2 pb-4" data-aos="fade-up">
             <h1 class="display-4 mb-3">Managed Kubernetes<br>maar dan <img src="img/beter_logo_tr.png" alt="BETER" style="height: 1.0em; position: relative; top: -0.1em;"></h1>
         </div>
     </header>
@@ -229,7 +220,7 @@
                         <div class="card-body text-center p-4">
                             <i class="bi bi-gear text-primary mb-3" style="font-size: 2.5rem;"></i>
                             <h4 class="card-title mb-3">Clusterbeheer</h4>
-                            <p class="card-text text-muted">Updates, upgrades en security patches. <span class="text-primary fw-bold">BETER</span> regelt het, zodat jouw ontwikkelteam niet wordt afgeleid.</p>
+                            <p class="card-text text-muted">De inrichting, installatie, updates, upgrades en security patches. <span class="text-primary fw-bold">BETER</span> regelt het, zodat jouw ontwikkelteam niet wordt afgeleid.</p>
                         </div>
                     </div>
                 </div>
@@ -238,7 +229,7 @@
                         <div class="card-body text-center p-4">
                             <i class="bi bi-code-slash text-primary mb-3" style="font-size: 2.5rem;"></i>
                             <h4 class="card-title mb-3">GitOps</h4>
-                            <p class="card-text text-muted">Deployen wordt een eitje. Push naar Git en <span class="text-primary fw-bold">BETER</span> zorgt dat het draait. Geen handmatige scripts of ad-hoc fixes meer, maar pure automatisering.</p>
+                            <p class="card-text text-muted">Deployen wordt een eitje. Push code naar Git en <span class="text-primary fw-bold">BETER</span> zorgt dat het draait. Geen handmatige scripts of ad-hoc fixes meer, maar pure automatisering.</p>
                         </div>
                     </div>
                 </div>
@@ -247,7 +238,7 @@
                         <div class="card-body text-center p-4">
                             <i class="bi bi-graph-up text-primary mb-3" style="font-size: 2.5rem;"></i>
                             <h4 class="card-title mb-3">Observability</h4>
-                            <p class="card-text text-muted">Met de slimme monitoring van <span class="text-primary fw-bold">BETER</span> beheren wij je hele stack. Maximale performance, minimale zorgen.</p>
+                            <p class="card-text text-muted">Met de slimme monitoring van <span class="text-primary fw-bold">BETER</span> beheren wij je kubernetes cluster. Maximale performance, minimale zorgen.</p>
                         </div>
                     </div>
                 </div>
@@ -285,7 +276,7 @@
     <!-- Tech Stack Strip -->
     <section class="py-4 bg-dark text-white border-bottom border-secondary">
         <div class="container text-center">
-            <h6 class="mb-4 text-uppercase text-white-50" style="letter-spacing: 2px;">Gebouwd met bewezen industrie standaarden</h6>
+            <h6 class="mb-4 text-uppercase text-white-50" style="letter-spacing: 2px;">Gebouwd met bewezen standaarden en complete DevOps Toolchain</h6>
             <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 opacity-75">
                 <div data-aos="fade-up" data-aos-delay="0">
                     <img src="img/logos/azure.svg" alt="Azure" style="height: 50px;">
