@@ -124,16 +124,8 @@
             background: #fff;
             border: 2px solid #ed507e;
             color: #ed507e;
-            transition: all 0.3s ease;
             position: relative;
             z-index: 2;
-        }
-
-        .step-item:hover .step-circle {
-            background: #ed507e;
-            color: #fff;
-            transform: scale(1.1);
-            box-shadow: 0 0.5rem 1rem rgba(237, 80, 126, 0.3);
         }
 
         /* Animated highlight effect for steps */
@@ -169,19 +161,19 @@
         }
 
         .step-item:nth-child(1) .step-circle {
-            animation-delay: 0s;
+            animation-delay: 3s;
         }
 
         .step-item:nth-child(2) .step-circle {
-            animation-delay: 2s;
+            animation-delay: 5s;
         }
 
         .step-item:nth-child(3) .step-circle {
-            animation-delay: 4s;
+            animation-delay: 7s;
         }
 
         .step-item:nth-child(4) .step-circle {
-            animation-delay: 6s;
+            animation-delay: 9s;
         }
 
         @media (min-width: 768px) {
